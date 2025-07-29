@@ -1,0 +1,150 @@
+BCC201
+-INTRODUCAO A PROGRAMACAO
+--Puca Huachi Vaz Penna
+
+BCC265
+-ELETRONICA PARA COMPUTACAO
+--Fernando Cortez Sica
+
+BCC501
+-INTRODUCAO A CIENCIA DA COMPUTACAO
+--Saul Emanuel Delabrida Silva
+
+MTM122
+-CALCULO DIFERENCIAL E INTEGRAL I
+
+MTM131
+-GEOMETRIA ANALITICA E CALCULO VETORIAL
+
+BCC101
+-MATEMATICA DISCRETA I
+--Ivair Ramos Silva
+
+BCC202
+-ESTRUTURA DE DADOS I
+--Pedro Henrique Lopes Silva
+
+BCC266
+-ORGANIZACAO DE COMPUTADORES
+--Joubert de Castro Lima 
+
+BCC324
+-INTERACAO HUMANO-COMPUTADOR
+--Aline Norberta de Brito
+
+EAD700
+-PRATICA DE LEITURA E PRODUCAO DE TEXTOS
+
+MTM123
+-CALCULO DIFERENCIAL E INTEGRAL II
+
+BCC102
+-MATEMATICA DISCRETA II
+--Rafael Alves Bonfim de Queiroz    
+
+BCC203
+-ESTRUTURA DE DADOS II
+--Guilherme Tavares de Assis 
+
+BCC221
+-PROGRAMACAO ORIENTADA A OBJETOS
+--Guillermo Cámara Chávez   
+
+BCC222
+-PROGRAMACAO FUNCIONAL
+--José Romildo Malaquias     
+
+BCC263      
+-ARQUITETURA DE COMPUTADORES
+--Ricardo Augusto Rabelo Oliveira
+
+MTM112
+INTRODUCAO A ALGEBRA LINEAR
+
+BCC204
+-TEORIA DOS GRAFOS
+--Marco Antonio Moreira de Carvalho
+
+BCC264
+-SISTEMAS OPERACIONAIS
+--Carlos Frederico M. C. Cavalcanti   
+
+BCC322
+-ENGENHARIA DE SOFTWARE I
+--Tiago Garcia de Senna Carneiro   
+
+BCC361
+-REDES DE COMPUTADORES
+--Daniel Ludovico Guidoni
+
+BCC760
+-CALCULO NUMERICO
+
+EST202
+-ESTATISTICA E PROBABILIDADE
+
+BCC241
+-PROJETO E ANALISE DE ALGORITMOS
+--Anderson Almeida Ferreira   
+
+BCC244
+-TEORIA DA COMPUTACAO
+--Rodrigo Geraldo Ribeiro
+
+BCC321
+-BANCO DE DADOS I
+--Guilherme Tavares de Assis   
+
+BCC323
+-ENGENHARIA DE SOFTWARE II
+--Aline Norberta de Brito 
+--Daniel Ludovico Guidoni
+
+BCC362
+-SISTEMAS DISTRIBUIDOS
+--Joubert de Castro Lima  
+
+BCC502
+-METODOLOGIA CIENTIFICA EM CIENCIA DA COMPUTACAO
+--Saul Emanuel Delabrida Silva   
+
+BCC325
+-INTELIGENCIA ARTIFICIAL
+--Jadson Castro Gertrudes
+--Rodrigo César Pedrosa Silva 
+
+BCC326
+-PROCESSAMENTO DE IMAGENS
+--Guillermo Cámara Chávez   
+
+BCC327
+-COMPUTACAO GRAFICA
+--Rafael Alves Bonfim de Queiroz     
+
+BCC328
+-CONSTRUCAO DE COMPILADORES I    
+--Rodrigo Geraldo Ribeiro
+
+BCC342
+-INTRODUCAO A OTIMIZACAO
+--Pablo Luiz Araújo Munhoz   
+--Gustavo Peixoto Silva
+--Gladston Juliano Prates Moreira 
+
+BCC392
+-MONOGRAFIA I
+
+BCC503
+-INFORMATICA E SOCIEDADE
+--Pablo Luiz Araújo Munhoz
+
+FIL101
+-INTRODUCAO A HISTORIA DA FILOSOFIA
+--Marta  
+
+BCC393
+-MONOGRAFIA II
+
+DIR260
+-DIREITO DA INFORMATICA
+
