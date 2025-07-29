@@ -1,0 +1,188 @@
+
+:root {
+  --bg: #1e1e2e;
+  --fg: #e0def4;
+  --card-bg: #2a2a3b;
+  --accent: #f6c177;
+  --hover: #574d68;
+  --border-radius: 12px;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  background: #27293d;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.navbar {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+}
+
+.nav-logo img {
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex: 1;
+}
+
+.nav-list li {
+  position: relative;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-list a {
+  color: var(--fg);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 1.2rem;
+  margin-right: 0.3rem;
+  filter: invert(1);
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+  z-index: 100;
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+
+.dropdown-menu li:hover {
+  background: var(--hover);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.ascii-logo {
+  font-family: monospace;
+  text-align: center;
+  margin: 2rem 0;
+  color: var(--accent);
+}
+
+#view {
+  max-width: 960px;
+  margin: 0 auto 2rem;
+  display: grid;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+@media(min-width: 600px) {
+  #view { grid-template-columns: repeat(2,1fr); }
+}
+@media(min-width: 900px) {
+  #view { grid-template-columns: repeat(3,1fr); }
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s, background 0.2s;
+  border: 2px solid transparent;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  background: var(--hover);
+}
+
+.card img {
+  max-width: 60px;
+  margin-bottom: 0.5rem;
+  filter: brightness(1.2);
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.pdf-embed {
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+.img-preview {
+  max-width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+/* === Layout vertical para tela de período === */
+#view.period-view {
+  display: block !important;      /* anula o grid */
+}
+#view.period-view > * {
+  margin: 1rem 0;                 /* espaço entre elementos */
+}
+#view.period-view .pdf-embed,
+#view.period-view .img-preview {
+  display: block;
+  margin: 0.5rem auto;
+  max-width: 80%;
+}
+
+
+
+/**/
+/* /* Override do grid para a tela de período */ */
+/* #view.period-view { */
+/*   display: block;           /* força fluxo vertical */ */
+/* } */
+/**/
+/* /* Espaçamento extra entre os elementos na visualização de período */ */
+/* #view.period-view > * { */
+/*   margin-bottom: 1rem; */
+/* } */
+/**/
+/* /* Ajustes específicos para embeds e imagens na visualização de período */ */
+/* #view.period-view .pdf-embed, */
+/* #view.period-view .img-preview { */
+/*   display: block; */
+/*   margin: 0.5rem auto;      /* centraliza e separa verticalmente */ */
+/*   max-width: 80%; */
+/* } */

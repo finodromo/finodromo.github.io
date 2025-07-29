@@ -58,34 +58,67 @@ MTM122
 2. Python 3 instalado (verifique com `python3 --version`).  
 3. Uma conta no GitHub.
 
-### 2. Clonar o Repositório
+### 2. Fork e configuração de remotes
 
-1. Abra o terminal (ou Git Bash no Windows).  
-2. Navegue até a pasta onde quer guardar o projeto.  
-3. Execute:
-   ```bash
-   git clone https://github.com/SEU_USUARIO/finodromo.git
-   ```
-4. Entre na pasta do projeto:
-   ```bash
-   cd finodromo
-   ```
-5. <!-- FUTURAMENTE: ![Passo 2 – Clonar repositório](docs/images/clone.png) -->
+1. No GitHub, faça **Fork** do repositório original:
+   - Acesse `https://github.com/B/finodromo.github.io`  
+   - Clique em **Fork** (canto superior direito) e selecione sua conta (`vodiniz`).  
 
-### 3. Executar o Script de Estrutura
+2. No terminal, dentro da pasta (caso já tenha clonado), renomeie o remote atual para `upstream`:
+   ```bash
+   git remote rename origin upstream
+   ```
+
+3. Adicione seu fork como `origin` (SSH):
+   ```bash
+   git remote add origin git@github.com:vodiniz/finodromo.github.io.git
+   ```
+
+4. Verifique os remotes:
+   ```bash
+   git remote -v
+   ```
+   Deve listar:
+   ```
+   origin    git@github.com:vodiniz/finodromo.github.io.git (fetch)
+   origin    git@github.com:vodiniz/finodromo.github.io.git (push)
+   upstream  git@github.com:B/finodromo.github.io.git     (fetch)
+   upstream  git@github.com:B/finodromo.github.io.git     (push)
+   ```
+
+5. Se **ainda não** clonou, use:
+   ```bash
+   git clone git@github.com:vodiniz/finodromo.github.io.git
+   cd finodromo.github.io
+   ```
+
+### 3. Clonar o Repositório (SSH)
+
+1. Se não fez clone no passo anterior:
+   ```bash
+   git clone git@github.com:vodiniz/finodromo.github.io.git
+   ```
+2. Entre na pasta:
+   ```bash
+   cd finodromo.github.io
+   ```
+
+### 4. Executar o Script de Estrutura
 
 1. Verifique se `disciplinas.txt` está na raiz do repositório.  
 2. Execute:
    ```bash
    python3 create_structure.py
    ```
-3. Aguarde a mensagem:
+3. Aguarde:
    ```
    ✅ Estrutura de pastas criada com sucesso.
    ```
-4. <!-- FUTURAMENTE: ![Passo 3 – Executar script](docs/images/run_script.png) -->
+4. <!-- FUTURAMENTE: ![Passo Executar script](docs/images/run_script.png) -->
 
-### 4. Criar Pasta de Período Manualmente (Somente se Necessário)
+> **⚠️ Atenção:** **Sempre** execute `python3 create_structure.py` **antes** de adicionar, commitar e enviar suas alterações. Isso garante que a estrutura de pastas e o JSON/JS estejam atualizados.
+
+### 5. Criar Pasta de Período Manualmente (Somente se Necessário)
 
 > **Atenção:** somente pastas de período `<ANO>.<PERIODO>` podem ser criadas manualmente.
 
@@ -95,7 +128,7 @@ MTM122
    decom/BCC501 - INTRODUCAO A CIENCIA DA COMPUTACAO/Saul Emanuel Delabrida Silva/25.1/
    ```
 
-### 5. Adicionar a Fina
+### 6. Adicionar a Fina
 
 1. Copie o arquivo da prova para dentro da pasta de período criada.  
 2. Renomeie o arquivo para:
@@ -105,37 +138,46 @@ MTM122
    Exemplos: `prova1.pdf`, `prova1.png`  
 3. **Importante:** se o nome do arquivo ou o diretório de período não estiver no formato correto, seu Pull Request será **NEGADO**.
 
-### 6. Commit e Push das Alterações
+### 7. Commit e Push das Alterações
 
 1. Verifique o status:
    ```bash
    git status
    ```
-2. Adicione os arquivos:
+2. **⚠️ Não esqueça de rodar o script antes de commitar:**
+   ```bash
+   python3 create_structure.py
+   ```
+3. Adicione os arquivos:
    ```bash
    git add .
    ```
-3. Crie um branch descritivo:
+4. Crie um branch descritivo:
    ```bash
    git checkout -b adiciona-fina-BCC501-25.1
    ```
-4. Faça o commit:
+5. Faça o commit:
    ```bash
    git commit -m "Adiciona prova BCC501 25.1 para Saul Emanuel"
    ```
-5. Envie para o GitHub:
+6. Envie para o **origin** (seu fork):
    ```bash
    git push origin adiciona-fina-BCC501-25.1
    ```
 
-### 7. Abrir um Pull Request
+### 8. Abrir um Pull Request
 
-1. Acesse o repositório no GitHub.  
+1. No GitHub, acesse seu fork:  
+   `https://github.com/vodiniz/finodromo.github.io`  
 2. Clique em **Compare & pull request**.  
-3. Preencha:
-   - **Título:** breve e descritivo.  
-   - **Descrição:** explique o que adicionou e confira as regras.  
-4. Clique em **Create pull request**.
+3. Compare:
+   - **base**: `B/finodromo.github.io:main`  
+   - **compare**: `vodiniz/finodromo.github.io:first-commit` (ou seu branch)  
+4. Preencha:
+   - **Título** breve e descritivo.  
+   - **Descrição** com o que foi adicionado.  
+5. Clique em **Create pull request**.  
+6. <!-- FUTURAMENTE: ![Passo Pull Request](docs/images/pull_request.png) -->
 
 ---
 
@@ -147,6 +189,7 @@ MTM122
 - Pastas de disciplina e professor são geradas **automaticamente** pelo script.  
 - **Somente** pastas de período `<ANO>.<PERIODO>` podem ser criadas manualmente.  
 - Arquivos de prova devem se chamar `prova1.<extensão>`.  
+  - Provas com mais de 1 página/foto devem estar no formato .pdf ou então devem estar dentro de uma pasta chamada provaX, e cada foto deve-se ser chamada de parte1.<extension>, parte2.<extension>...  
 - Pull Requests que não seguirem o formato serão **NEGADOS**.
 
 ---
