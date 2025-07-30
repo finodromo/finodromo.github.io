@@ -7,7 +7,18 @@
       "Rafael Alves Bonfim de Queiroz": {}
     },
     "BCC201 - INTRODUCAO A PROGRAMACAO": {
-      "Puca Huachi Vaz Penna": {}
+      "Puca Huachi Vaz Penna": {
+        "22.1": [
+          {
+            "type": "file",
+            "name": "prova2.pdf"
+          },
+          {
+            "type": "file",
+            "name": "prova3.pdf"
+          }
+        ]
+      }
     },
     "BCC202 - ESTRUTURA DE DADOS I": {
       "Pedro Henrique Lopes Silva": {}
@@ -112,7 +123,7 @@
     "BCC760 - CALCULO NUMERICO": {}
   },
   "demat": {
-    "MTM112": {},
+    "MTM112 - INTRODUCAO A ALGEBRA LINEAR": {},
     "MTM122 - CALCULO DIFERENCIAL E INTEGRAL I": {},
     "MTM123 - CALCULO DIFERENCIAL E INTEGRAL II": {},
     "MTM131 - GEOMETRIA ANALITICA E CALCULO VETORIAL": {}
