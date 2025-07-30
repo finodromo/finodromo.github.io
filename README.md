@@ -52,7 +52,7 @@ MTM122
 
 **Siga estes passos com atenção**! Coloque imagens futuramente onde indicado para facilitar.
 
-Onde estiver escrito <user> entenda como seu usuário do github.
+Onde estiver escrito `<user>` entenda como seu usuário do github.
 
 ### 1. Pré-requisitos
 
