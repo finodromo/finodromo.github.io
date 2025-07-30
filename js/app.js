@@ -97,7 +97,7 @@ function renderPeriods(container, dept, disc, prof) {
   if (!periods.length) {
     container.innerHTML = `
       <p>Não há finas cadastradas para <strong>${prof}</strong> em <strong>${disc}</strong>.</p>
-      <p><a href="https://github.com/vodiniz/finodromo.github.io" target="_blank">
+      <p><a href="https://github.com/finodromo/finodromo.github.io" target="_blank">
         Contribua abrindo um Pull Request!
       </a></p>`;
     return;

@@ -174,7 +174,7 @@ Onde estiver escrito <user> entenda como seu usuário do github.
 2. Clique em **Compare & pull request**.  
 3. Compare:
    - **base**: `finodromo/finodromo.github.io:main`  
-   - **compare**: `vodiniz/finodromo.github.io:first-commit` (ou seu branch)  
+   - **compare**: `<user>/finodromo.github.io:first-commit` (ou seu branch)  
 4. Preencha:
    - **Título** breve e descritivo.  
    - **Descrição** com o que foi adicionado.  

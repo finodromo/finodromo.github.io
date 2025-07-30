@@ -2,57 +2,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>Finodromo</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <!-- NAVBAR -->
   <header>
     <nav class="navbar">
-      <div class="nav-logo">
-        <a href="#" onclick="routeTo('#')">
-          <img src="assets/logos/finodromo.svg" alt="Finodromo" />
-        </a>
-      </div>
       <ul class="nav-list">
-        <li><a href="https://github.com/vodiniz/finodromo.github.io" target="_blank">
-          <img src="assets/logos/github.svg" class="icon"/> Repositório</a>
+        <li class="nav-back">
+          <a href="#" class="back-button" onclick="history.back(); return false;">←</a>
         </li>
-        <li class="dropdown" data-dept="decom">Decom
+        <li class="nav-logo">
+          <a href="#" class="logo-link" onclick="routeTo('#'); return false;">Home</a>
+        </li>
+        <li>
+          <a href="https://github.com/finodromo/finodromo.github.io" target="_blank">GitHub</a>
+        </li>
+        <li class="dropdown" data-dept="decom">
+          <a href="#" onclick="routeTo('#decom'); return false;">Decom ▾</a>
           <ul class="dropdown-menu"></ul>
         </li>
-        <li class="dropdown" data-dept="demat">Demat
+        <li class="dropdown" data-dept="demat">
+          <a href="#" onclick="routeTo('#demat'); return false;">Demat ▾</a>
           <ul class="dropdown-menu"></ul>
         </li>
-        <li class="dropdown" data-dept="outras">Outros
+        <li class="dropdown" data-dept="outras">
+          <a href="#" onclick="routeTo('#outras'); return false;">Outros ▾</a>
           <ul class="dropdown-menu"></ul>
         </li>
       </ul>
     </nav>
   </header>
 
-  <!-- ASCII LOGO -->
   <main>
     <pre class="ascii-logo">
-
   _______  __    _____  ___      ______    ________    _______     ______   ___      ___     ______    
  /"     "||" \  (\"   \|"  \    /    " \  |"      "\  /"      \   /    " \ |"  \    /"  |   /    " \   
 (: ______)||  | |.\\   \    |  // ____  \ (.  ___  :)|:        | // ____  \ \   \  //   |  // ____  \  
- \/    |  |:  | |: \.   \\  | /  /    ) :)|: \   ) |||_____/   )/  /    ) :)/\\  \/.    | /  /    ) :) 
- // ___)  |.  | |.  \    \. |(: (____/ // (| (___\ || //      /(: (____/ //|: \.        |(: (____/ //  
-(:  (     /\  |\|    \    \ | \        /  |:       :)|:  __   \ \        / |.  \    /:  | \        /   
+ \/    |  |:  | |: \\.   \\  | /  /    ) :)|: \   ) |||_____/   )/  /    ) :)/\\  \/.    | /  /    ) :) 
+ // ___)  |.  | |.  \    \. |(: (____/ // (| (___\ || //      /(: (____/ //|:   \        |(: (____/ //  
+(:  (     /\  |\|    \    \ | \        /  |:       :)|:  __   \ \        / |.    \    /:  | \        /   
  \__/    (__\_|_)\___|\____\)  \"_____/   (________/ |__|  \___) \"_____/  |___|\__/|___|  \"_____/    
-                                                                                                       
-
-
     </pre>
-
     <section id="view"></section>
   </main>
 
-  <!-- estrutura carregada via data/structure.js -->
   <script src="data/structure.js"></script>
   <script src="js/app.js"></script>
 </body>
