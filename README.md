@@ -52,6 +52,8 @@ MTM122
 
 **Siga estes passos com atenção**! Coloque imagens futuramente onde indicado para facilitar.
 
+Onde estiver escrito <user> entenda como seu usuário do github.
+
 ### 1. Pré-requisitos
 
 1. Git instalado (verifique com `git --version`).  
@@ -61,8 +63,8 @@ MTM122
 ### 2. Fork e configuração de remotes
 
 1. No GitHub, faça **Fork** do repositório original:
-   - Acesse `https://github.com/B/finodromo.github.io`  
-   - Clique em **Fork** (canto superior direito) e selecione sua conta (`vodiniz`).  
+   - Acesse `https://github.com/finodromo/finodromo.github.io`  
+   - Clique em **Fork** (canto superior direito) e selecione sua conta (`<User>`).  
 
 2. No terminal, dentro da pasta (caso já tenha clonado), renomeie o remote atual para `upstream`:
    ```bash
@@ -71,7 +73,7 @@ MTM122
 
 3. Adicione seu fork como `origin` (SSH):
    ```bash
-   git remote add origin git@github.com:vodiniz/finodromo.github.io.git
+   git remote add origin git@github.com:<user>/finodromo.github.io.git
    ```
 
 4. Verifique os remotes:
@@ -80,15 +82,15 @@ MTM122
    ```
    Deve listar:
    ```
-   origin    git@github.com:vodiniz/finodromo.github.io.git (fetch)
-   origin    git@github.com:vodiniz/finodromo.github.io.git (push)
-   upstream  git@github.com:B/finodromo.github.io.git     (fetch)
-   upstream  git@github.com:B/finodromo.github.io.git     (push)
+   origin    git@github.com:<user>/finodromo.github.io.git (fetch)
+   origin    git@github.com:<user>/finodromo.github.io.git (push)
+   upstream  git@github.com:finodromo/finodromo.github.io.git     (fetch)
+   upstream  git@github.com:finodromo/finodromo.github.io.git     (push)
    ```
 
 5. Se **ainda não** clonou, use:
    ```bash
-   git clone git@github.com:vodiniz/finodromo.github.io.git
+   git clone git@github.com:<user>/finodromo.github.io.git
    cd finodromo.github.io
    ```
 
@@ -96,7 +98,7 @@ MTM122
 
 1. Se não fez clone no passo anterior:
    ```bash
-   git clone git@github.com:vodiniz/finodromo.github.io.git
+   git clone git@github.com:<user>/finodromo.github.io.git
    ```
 2. Entre na pasta:
    ```bash
@@ -168,10 +170,10 @@ MTM122
 ### 8. Abrir um Pull Request
 
 1. No GitHub, acesse seu fork:  
-   `https://github.com/vodiniz/finodromo.github.io`  
+   `https://github.com/<user>/finodromo.github.io`  
 2. Clique em **Compare & pull request**.  
 3. Compare:
-   - **base**: `B/finodromo.github.io:main`  
+   - **base**: `finodromo/finodromo.github.io:main`  
    - **compare**: `vodiniz/finodromo.github.io:first-commit` (ou seu branch)  
 4. Preencha:
    - **Título** breve e descritivo.  
