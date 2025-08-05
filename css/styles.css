@@ -169,6 +169,21 @@ header {
 
 
 
+/* Home header (logo + título) */
+.home-header {
+  text-align: center;
+  margin: 2rem 0;
+}
+.site-logo-large {
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+.site-title-large {
+  font-family: 'Poppins', sans-serif; /* ou Montserrat, Futura */
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--accent);
+}
 /**/
 /* /* Override do grid para a tela de período */ */
 /* #view.period-view { */

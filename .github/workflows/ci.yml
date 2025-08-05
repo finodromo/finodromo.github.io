@@ -1,0 +1,34 @@
+
+name: CI
+
+on:
+  pull_request:
+    paths:
+      - '**/*'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout do código
+      uses: actions/checkout@v3
+
+    - name: Configure Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Instalar dependências (se houver)
+      run: |
+        if [ -f requirements.txt ]; then
+          pip install -r requirements.txt
+        fi
+
+    - name: Gerar estrutura de pastas
+      run: |
+        python3 create_structure.py
+
+    - name: Verificar nomenclatura de períodos e provas
+      run: |
+        python3 verify_nomenclature.py
