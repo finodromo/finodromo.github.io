@@ -31,18 +31,10 @@
     },
     "BCC221 - PROGRAMACAO ORIENTADA A OBJETOS": {
       "Guillermo Cámara Chávez": {
-        "24.2": [
-          {
-            "type": "file",
-            "name": "prova1.pdf"
-          },
-          {
-            "type": "file",
-            "name": "prova2.jpeg"
-          },
+        "24.1": [
           {
             "type": "folder",
-            "name": "prova3",
+            "name": "prova1",
             "files": [
               "parte1.jpeg",
               "parte2.jpeg"

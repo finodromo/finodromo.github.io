@@ -5,6 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>Finodromo</title>
+
+  <!-- Google Font Poppins Bold -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+    rel="stylesheet"
+  />
+
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -15,10 +22,15 @@
           <a href="#" class="back-button" onclick="history.back(); return false;">←</a>
         </li>
         <li class="nav-logo">
-          <a href="#" class="logo-link" onclick="routeTo('#'); return false;">Home</a>
+          <a href="#" class="logo-link" onclick="routeTo('#'); return false;">
+            <img src="assets/logos/finodromo.png" alt="Finodromo" class="site-logo" />
+            <!-- <span class="site-title">Finodromo</span> -->
+          </a>
         </li>
         <li>
-          <a href="https://github.com/finodromo/finodromo.github.io" target="_blank">GitHub</a>
+          <a href="https://github.com/vodiniz/finodromo.github.io" target="_blank">
+            GitHub
+          </a>
         </li>
         <li class="dropdown" data-dept="decom">
           <a href="#" onclick="routeTo('#decom'); return false;">Decom ▾</a>
@@ -36,18 +48,15 @@
     </nav>
   </header>
 
-  <main>
-    <pre class="ascii-logo">
-  _______  __    _____  ___      ______    ________    _______     ______   ___      ___     ______    
- /"     "||" \  (\"   \|"  \    /    " \  |"      "\  /"      \   /    " \ |"  \    /"  |   /    " \   
-(: ______)||  | |.\\   \    |  // ____  \ (.  ___  :)|:        | // ____  \ \   \  //   |  // ____  \  
- \/    |  |:  | |: \\.   \\  | /  /    ) :)|: \   ) |||_____/   )/  /    ) :)/\\  \/.    | /  /    ) :) 
- // ___)  |.  | |.  \    \. |(: (____/ // (| (___\ || //      /(: (____/ //|:   \        |(: (____/ //  
-(:  (     /\  |\|    \    \ | \        /  |:       :)|:  __   \ \        / |.    \    /:  | \        /   
- \__/    (__\_|_)\___|\____\)  \"_____/   (________/ |__|  \___) \"_____/  |___|\__/|___|  \"_____/    
-    </pre>
-    <section id="view"></section>
-  </main>
+<main>
+  <!-- Cabeçalho que aparece só na home -->
+  <div id="home-header" class="home-header">
+    <img src="assets/logos/finodromo.png" alt="Finodromo" class="site-logo-large" />
+    <h1 class="site-title-large">Finodromo</h1>
+  </div>
+
+  <section id="view"></section>
+</main>
 
   <script src="data/structure.js"></script>
   <script src="js/app.js"></script>
